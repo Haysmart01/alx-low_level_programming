@@ -13,6 +13,7 @@ char *cap_string(char *s)
 	if (s[i] >= 'a' && s[i] <= 'z')
 	s[i] = s[i] - 'a' + 'A';
 	i++;
+
 	while (s[i] != '\0') /* iterate through string */
 	{
 		/* if lowercase and prior char is separator, capitalize*/
@@ -24,5 +25,7 @@ char *cap_string(char *s)
 					|| s[i - 1] == '\n'))
 			s[i] = s[i] - 'a' + 'A';
 		i++;
-		return (s);
 	}
+
+		return (s);
+}
